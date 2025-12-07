@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>성적증명서 인쇄</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #printButton {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            width: 60px;
+            opacity: 0.8;
+            transition: 0.2s;
+        }
+
+        #printButton:hover {
+            opacity: 1;
+        }
+
+        img#mainImage {
+            margin-top: 80px;
+            width: 80%;
+            max-width: 700px;
+        }
+    </style>
+
+    <script>
+        function printPage() {
+            window.print();
+        }
+    </script>
+</head>
+<body>
+
+    <!-- 인쇄 버튼 -->
+    <img id="printButton" src="A_2D_digital_vector_icon_of_a_printer_is_depicted_.png" onclick="printPage()">
+
+    <!-- 메인 이미지 -->
+    <img id="mainImage" src="KICE_score.png">
+
+</body>
+</html>
